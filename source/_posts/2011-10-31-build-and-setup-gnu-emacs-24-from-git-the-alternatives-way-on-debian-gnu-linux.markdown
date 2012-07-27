@@ -141,7 +141,7 @@ Install the _ad hoc_ new alternatives (needed just once, even if you recompile a
     sudo update-alternatives --install /usr/bin/grep-changelog \
       grep-changelog /usr/local/bin/grep-changelog.emacs24 30 \
       --slave /usr/share/man/man1/grep-changelog.1.gz grep-changelog.1.gz \
-      /usr/local/share/man/man1/grep-changelog.1.gz</code></pre>
+      /usr/local/share/man/man1/grep-changelog.1.gz
 
 The given priorities are higher than the other alternatives. To finish, I set all those alternatives to the automatic mode:
 
