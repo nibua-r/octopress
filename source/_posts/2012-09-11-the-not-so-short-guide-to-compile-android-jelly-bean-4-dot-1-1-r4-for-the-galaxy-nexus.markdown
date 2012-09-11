@@ -10,13 +10,13 @@ categories: Android
 Introduction
 ------------
 
-Back to the beginning of this year, I succeded in compiling ICS AOSP 4.0.3_r1 for the Galaxy
-Nexus. At that time, I didn't have much time to post a full entry on the whole compilation process
-(including the diﬀerent hacks needed to get a fully functional ROM).
+<span itemprop="description">Back to the beginning of this year, I succeded in compiling ICS AOSP
+4.0.3_r1 for the Galaxy Nexus. At that time, I didn't have much time to post a full entry on the
+whole compilation process (including the diﬀerent hacks needed to get a fully functional ROM).
 
 With the Jelly Bean AOSP release and my third ROM compilation, I've succesfully compiled 4.1
 back in July. Now we have 4.1.1_r4 and it's due time for me to document the process using Debian
-GNU/Linux.
+GNU/Linux.</span>
 
 Without the [Android Open Source Project](http://source.android.com/), nothing has been possible and
 the website clearly describes how to proceed to get the code and compile it for a supported
