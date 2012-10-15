@@ -66,3 +66,16 @@ Compile time
 ------------
 
 ATTOW, the debian package version of `libav-tools` is `0.8.xx` and a `git log --tags --simplify-by-decoration --pretty="format:%ai %d"` shows that the `0.9` tag has been bumped in the late 2011… Too bad… I'll need to compile that myself if I really wanted that `creation_date`.
+
+Update
+------
+
+The wording of the *Compile time* is unclear at least, so:
+
+- libav and FFmpeg has forked.
+
+- libav is now the default on Debian GNU/Linux.
+
+- `libavformat/mov.c` has evolved differently but FFmpeg seems to provide a fix (that must be
+  verified) but that doesn't mean that the issue has not been fixed in the libav edge, only that
+  I've found only clue that the issue has been adressed by the FFmpeg project.
