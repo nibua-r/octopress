@@ -518,9 +518,22 @@ task :setup_github_pages, :repo do |t, args|
     config_message << "\n  deploy_default: push"
   end
 
+<<<<<<< HEAD
   unless deploy_configuration[:deploy_branch] == branch
     deploy_configuration[:deploy_branch] = branch
     config_message << "\n  deploy_branch: #{branch}"
+=======
+  # Configure published url
+  jekyll_config = IO.read('_config.yml')
+  current_url = /^url:\s?(.*$)/.match(jekyll_config)[1]
+  has_cname = File.exists?("#{source_dir}/CNAME")
+  if current_url == 'http://yoursite.com'
+    jekyll_config.sub!(/^url:.*$/, "url: #{url}")
+    File.open('_config.yml', 'w') do |f|
+      f.write jekyll_config
+    end
+    current_url = url
+>>>>>>> 9858291d2ca90d1f895f4dc4642e03dbda353899
   end
 
   # Mention updated configs if any
